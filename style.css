@@ -6,15 +6,114 @@
     height: 100vh;
     width: 100%;
     border: 4px solid red;
+    padding: 0;
+    
 }
 
 .navbar{
     display: flex;
-    height: 2rem;
     width: 100%;
-    border: 4px solid green;
+    /*border: 4px solid green;*/
+    padding-left: 2rem;
+}
+.logo{
+display: flex;
 }
 
+.nav-list{
+    display: flex;
+    /*border: 1px solid blue;*/
+}
+.nav-list ul{
+    list-style-type: none;
+}
+
+.nav-list ul li{
+    display: inline;
+    margin: 2.2rem;
+    color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 2px solid  black;*/
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-btn{
+    display: flex;
+width: 140px;
+height: 40px;
+padding: 5px 26px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 30px;
+background: var(--gradient-orange-gradient-5, linear-gradient(90deg, #FFE259 0%, #FFA751 100%));
+border: none;
+}
+
+.btn-font{
+    display: flex;
+    gap: 1rem;
+}
+@media screen and (min-width: 300px) and (max-width: 1141px) {
+    .navbar{
+        padding-left: 0;
+    }
+
+    .nav-list ul li{
+    margin: 0.5rem;
+}
+.btn{
+    gap: 1rem;
+}
+
+.btn-font{
+    gap: 0.5rem;
+}
+
+#nav-btn{
+    display: flex;
+width: 100px;
+height: 30px;
+padding: 2.5px 13px;
+justify-content: center;
+align-items: center;
+
+}
+    
+}
+
+@media screen and (min-width: 300px) and (max-width: 766px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+}
+
+@media screen and (min-width: 305px) and (max-width: 455px) {
+    .nav-list ul{
+        padding: 0;
+    }
+    .nav-list ul li{
+        font-size: 10px;
+    }
+
+}
 .main{
     display: flex;
 }
